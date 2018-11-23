@@ -1,0 +1,50 @@
+/* Kamiar Coffey
+menu css file */
+
+#mainMenu {
+  width: 20%;
+  border: 3px solid darkred;
+  float: left;
+  position: fixed;
+  background-color:#866;
+
+}
+
+.option {
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 3px solid brown;
+  text-align: center;
+  background-color: tan;
+}
+
+#content {
+  float: right;
+  width: 75%;
+  border: 5px solid maroon;
+  padding: 5px;
+  color: tan;
+  background-color: brown;
+}
+
+#contact {
+  border: 3px;
+  color: #179;
+  font-size: 20px;
+}
+
+  /* changes
+  1. solid maroon border
+  2. use h2 for titles
+  3. margin
+  4. background color
+  5. images
+  6. use RGB color codes in main menu background
+  */
+}
+
+.coption {
+
+}
