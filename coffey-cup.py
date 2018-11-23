@@ -14,10 +14,10 @@ FPL_URL = 'https://fantasy.premierleague.com/drf/bootstrap-static'
 HEADER = """<!-- DOCTYPE HTML -->
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <html>
-    <head>The Draft Room!
+    <head>Basic API call returns FLP data!
     </head>
     <body>
-        <p>Welcome!</p>
+        <p>Table of players by points scored per minute</p>
         <div>
             <table style="width:30%">
                 <tr>
