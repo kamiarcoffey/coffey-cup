@@ -1,6 +1,19 @@
 /* Kamiar Coffey
 menu css file */
 
+table {
+  align-text: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+}
+
+td, th {
+  white-space: nowrap;
+  border: 1px solid black;
+}
+
 #mainMenu {
   width: 20%;
   border: 3px solid darkred;

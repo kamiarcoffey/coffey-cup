@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import webbrowser
 
+from flask import Flask
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -12,7 +13,21 @@ app = Flask(__name__)
 FPL_URL = 'https://fantasy.premierleague.com/drf/bootstrap-static'
 
 HEADER = """<!-- DOCTYPE HTML -->
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<style>
+table {
+  align-text: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+}
+
+td, th {
+  white-space: nowrap;
+  border: 1px solid black;
+}
+
+</style>
 <html>
     <head>The Draft Room!
     </head>
@@ -23,12 +38,14 @@ HEADER = """<!-- DOCTYPE HTML -->
                 <tr>
                 <th>Name</th>
                 <th>Points Per Minute</th>
-                </tr>"""
+                </tr>
+"""
 FOOTER = """
             </table>
         </div>
     </body>
-</html>"""
+</html>
+"""
 
 def readAPItoFile():
     r = requests.get(FPL_URL)
@@ -86,18 +103,3 @@ def findBestRatioPlayer():
     return points_per_min
     # for element in points_per_min:
     #     print(element[0],element[1])
-
-
-@app.route('/')
-def landingPage():
-    return render_template('index.html')
-
-@app.route('/chamber', methods=['GET', 'POST'])
-def chamber():
-    readAPItoFile()
-    points_per_min = findBestRatioPlayer()
-    writeToHTMLTable('templates/chamber.html', points_per_min)
-    return render_template('chamber.html')
-
-if __name__ == "__coffey-cup__":
-    app.run(debug=True, use_reloader=True)
