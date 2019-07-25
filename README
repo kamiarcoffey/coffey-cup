@@ -1,6 +1,8 @@
 # Kamiar Coffey
 # Coffey-Cup README
 
+** Check out the Code WalkThrough And Discussion.ipynb notebook for a tour **
+
 An excuse to learn how to use Flask: currently a preliminary set-up with Flask to use the Premier League API to create a web-app that will run predictive metrics to help pick players for the Coffey Cup fantasy draft league
 
 ## Code ##
