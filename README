@@ -1,0 +1,19 @@
+# Kamiar Coffey
+# CSCI 3202 Final Practicum README
+
+## Write Up ##
+* The write up is located in the Jupyter Notebook KamiarCoffey_FinalPracticum.ipynb
+* The notebook also includes all working Code
+* The notebook has also been saved statically as PDF and as an HTML file for ease of reading
+* KamiarCoffey_FinalPracticum.pdf
+* KamiarCoffey_FinalPracticum.html
+
+## Code ##
+* All code is in KamiarCoffey_FinalPracticum.py. To run via the terminal use Python3
+* It includes some API calls and myPlotLib packages
+* It also references some JSON files located in the main directory
+
+## Data Files ##
+* leagueInfo.json stores info on the league as a whole (ref player name to ID)
+* playerVectorDictionary.json stores the working JSON object for the training vectors of each player used in the model
+* values in this dictionary are summed across the entire season already
