@@ -18,6 +18,9 @@ An excuse to learn how to use Flask: currently a preliminary set-up with Flask t
 # leagueChampions
 
 ## To Run ##
+```
+bash
 $ export FLASK_APP=coffey-cup.py
 $ flask run
+```
 
